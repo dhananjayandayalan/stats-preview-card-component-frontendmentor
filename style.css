@@ -11,29 +11,10 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-html {
-  font-size: 62.5%;
-}
-
 body {
   background: hsl(233, 47%, 7%);
   font-family: "Inter", sans-serif;
   color: hsl(0, 0%, 100%);
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
 }
 
 main {
@@ -56,19 +37,19 @@ section {
       hsla(277, 81%, 34%, 0.6)
     ),
     url("./images/image-header-mobile.jpg");
-  height: 22rem;
+  height: 14rem;
   background-size: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .stats {
-  padding: 4rem 3.2rem;
+  padding: 3rem 1rem;
   text-align: center;
 }
 
 .stats h1 {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   padding-bottom: 2rem;
 }
 
@@ -77,8 +58,9 @@ section {
 }
 
 .stats p {
-  font-size: 1.5rem;
-  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.6);
+  word-spacing: 2px;
   line-height: 1.6;
   padding-bottom: 3rem;
 }
@@ -93,15 +75,16 @@ section {
 
 .stats ul li span:first-child {
   display: block;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
 }
 
 .stats ul li span:last-child {
+  font-size: 12px;
   font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsla(0, 0%, 100%, 0.6);
   letter-spacing: 1px;
 }
 
@@ -112,7 +95,8 @@ section {
 
   section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 540px;
+    column-gap: 1rem;
     max-width: 1000px;
   }
 
@@ -131,22 +115,30 @@ section {
     background-size: cover;
     border-top-left-radius: unset;
     border-bottom-right-radius: 5px;
-    width: 100%;
     height: auto;
   }
 
   .stats {
     text-align: unset;
-    padding: 4rem;
+    padding: 4rem 6rem 4rem 4rem;
+  }
+
+  .stats h1 {
+    font-size: 2rem;
   }
 
   .stats p {
-    padding-bottom: 6rem;
+    font-size: 13px;
+    padding-bottom: 4rem;
   }
 
   .stats ul {
     display: flex;
     gap: 4rem;
+  }
+
+  .stats ul li:not(:last-child) {
+    padding: unset;
   }
 }
 
