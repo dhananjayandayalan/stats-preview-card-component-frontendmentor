@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.6rem;
+}
